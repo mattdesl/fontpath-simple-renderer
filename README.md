@@ -39,19 +39,18 @@ result.glyphs.forEach(function(item) {
 
 ### `renderer = Renderer([options])`
 
-Creates a new renderer with the given options. These are not necessary.
+Creates a new renderer with the given options. These are optional.
 
 Possible options:
-- `font`: the Font object
-- `fontSize`: the font size in pixels, defaults to what is defined in `font`
-- `text`: the string of text we will be rendering
-- `layout`: an initial number for wrap width (pixels) if we want to word-wrap the text, 
-otherwise just lays the text out in a single line (no breaks)
-- `align`: a string 'left', 'center', 'right' (also stored in `Renderer.Align` constants), default left
-- `underline`: boolean, whether to underline, default false
-- `underlinePosition`: the position of underline, leave undefined to compute automatically
-- `underlineThickness`: the underline thickness, leave undefined to compute automatically
-- `wordwrap`: same as setting `renderer.wordwrap.mode`, can be `normal`, `pre`, or `nowrap`
+- `font` the Font object
+- `fontSize` the font size in pixels, defaults to what is defined in `font`
+- `text` the string of text we will be rendering
+- `align` a string 'left', 'center', 'right' (also stored in `Renderer.Align` constants), default left
+- `underline` boolean, whether to underline, default false
+- `underlinePosition` the position of underline, leave undefined to compute automatically
+- `underlineThickness` the underline thickness, leave undefined to compute automatically
+- `wrapMode` same as setting `renderer.wordwrap.mode`, can be `normal`, `pre`, or `nowrap`
+- `wrapWidth` an initial number in pixels which is passed to `layout()` after the other options have been set. Otherwise, defaults to no layout (a single line, no breaks)
 
 ### `renderer.render(x, y, start, end)`
 
@@ -104,9 +103,9 @@ Utility method to get the font's ascender.
 
 ## members
 
-### `renderer.font`
-### `renderer.fontSize`
-### `renderer.text`
+### `renderer.font` ^(Font object)
+### `renderer.fontSize` (number)
+### `renderer.text` (string)
 
 Some font, font size and text parameters. Changing these values will clear the current layout.
 
