@@ -28,11 +28,11 @@ FontpathRenderer.Align = Base.Align
 
 FontpathRenderer.prototype.renderGlyph = function(i, glyph, scale, x, y) {
     this.data.glyphs.push({
-        index: i,
         glyph: glyph,
         charCode: this.text.charCodeAt(i),
         scale: [ scale, -scale ],
-        position: [ x, y ]
+        position: [ x, y ],
+        index: i
     })
 }
 
