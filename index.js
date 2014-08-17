@@ -16,10 +16,10 @@ function FontpathRenderer(options) {
         this.underlinePosition = options.underlinePosition
     if (typeof options.text === 'string')
         this.text = options.text
-    if (typeof options.wordwrap === 'string')
-        this.wordwrap.mode = options.wordwrap
-    if (typeof options.layout === 'number')
-        this.layout(options.layout)
+    if (typeof options.wrapMode === 'string')
+        this.wordwrap.mode = options.wrapMode
+    if (typeof options.wrapWidth === 'number')
+        this.layout(options.wrapWidth)
 }
 
 FontpathRenderer.prototype = Object.create(Base.prototype)
