@@ -17,20 +17,21 @@ var options = {
 
 var renderer = require('fontpath-simple-renderer')(options)
 
-//we can set it up the same way as fontpath-renderer
+//set up some parameters
+renderer.align = 'right'
 renderer.wordwrap.mode = 'pre'
 renderer.layout(250)
 
-//renders glyphs and underline data into an object
-var data = renderer.render(x, y, startIndex, endIndex)
+//renders glyphs and underline data
+var result = renderer.render(x, y, startIndex, endIndex)
 
 //handle underlines
-data.underlines.forEach(function(item) {
+result.underlines.forEach(function(item) {
 	console.log( item.position, item.size )
 })
 
 //handle glyphs
-data.glyphs.forEach(function(item) {
+result.glyphs.forEach(function(item) {
 	//	draw/manipulate the glyph data
 	console.log( item.index, item.position, item.scale, item.glyph, item.charCode )
 })
