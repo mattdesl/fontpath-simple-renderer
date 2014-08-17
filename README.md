@@ -103,7 +103,7 @@ Utility method to get the font's ascender.
 
 ## members
 
-### `renderer.font` ^(Font object)
+### `renderer.font` (Font object)
 ### `renderer.fontSize` (number)
 ### `renderer.text` (string)
 
