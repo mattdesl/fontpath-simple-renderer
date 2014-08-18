@@ -2,7 +2,7 @@
 
 [![experimental](http://badges.github.io/stability-badges/dist/experimental.svg)](http://github.com/badges/stability-badges)
 
-This is a generic module that various render engines (GL, canvas, etc) can use to draw fontpath glyphs to the screen. Most users are encouraged to use the higher level modules, [fontpath-canvas](https://github.com/mattdesl/fontpath-canvas) for 2D canvas, [fontpath-gl](https://github.com/mattdesl/fontpath-gl) for WebGL.
+This is a generic module that various render engines (GL, canvas, etc) can use to draw [fontpath glyphs](https://github.com/mattdesl/fontpath) to the screen. Most users are encouraged to use the higher level modules, [fontpath-canvas](https://github.com/mattdesl/fontpath-canvas) for 2D canvas, [fontpath-gl](https://github.com/mattdesl/fontpath-gl) for WebGL.
 
 ## Usage
 
