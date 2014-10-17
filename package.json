@@ -6,7 +6,6 @@
   "license": "MIT",
   "author": "Matt DesLauriers <dave.des@gmail.com>",
   "dependencies": {
-    "fontpath-glyph-iterator": "^1.0.0",
     "fontpath-renderer": "^2.0.1"
   },
   "devDependencies": {
