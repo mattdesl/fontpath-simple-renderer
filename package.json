@@ -6,7 +6,7 @@
   "license": "MIT",
   "author": "Matt DesLauriers <dave.des@gmail.com>",
   "dependencies": {
-    "fontpath-renderer": "^2.0.1"
+    "fontpath-renderer": "^2.0.2"
   },
   "devDependencies": {
     "fontpath-shape2d": "0.0.5",
