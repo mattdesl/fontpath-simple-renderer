@@ -7,11 +7,9 @@
   "author": "Matt DesLauriers <dave.des@gmail.com>",
   "dependencies": {
     "fontpath-renderer": "^2.0.2",
-    "fontpath-simple-renderer": "^2.0.3"
+    "inherits": "^2.0.1"
   },
   "devDependencies": {
-    "fontpath-shape2d": "0.0.5",
-    "fontpath-test-fonts": "0.0.4",
     "tape": "~2.13.2"
   },
   "scripts": {
