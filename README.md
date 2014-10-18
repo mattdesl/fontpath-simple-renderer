@@ -125,9 +125,7 @@ An instance of [fontpath-wordwrap](https://github.com/mattdesl/fontpath-wordwrap
 
 # Note on `fontpath-renderer`
 
-This is a simplified wrapper for [fontpath-renderer](https://github.com/mattdesl/fontpath-renderer/) that doens't involve subclassing anything. This has a slight overhead of GC thrashing and doesn't allow you to render glyphs on demand (as they are being laid out) but the difference is negligible for most applications.
-
-It's encouraged that implementations use this over the low-level fontpath-renderer module. 
+This is a simplified wrapper for [fontpath-renderer](https://github.com/mattdesl/fontpath-renderer/) that doens't involve subclassing anything. This has a slight overhead of GC thrashing and doesn't allow you to render glyphs on demand (as they are being laid out) but the difference is small for most applications.
 
 ## License
 

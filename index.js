@@ -1,27 +1,12 @@
 var Base = require('fontpath-renderer')
+var inherits = require('inherits')
 
 //TODO: Eventually lots of this code will just replace fontpath-renderer...
 
 function FontpathRenderer(options) {
     if (!(this instanceof FontpathRenderer))
         return new FontpathRenderer(options)
-    options = options||{}
-    Base.call(this, options.font, options.fontSize)
-
-    if (typeof options.align === 'string')
-        this.align = options.align
-    if (typeof options.underline === 'boolean')
-        this.underline = options.underline
-    if (typeof options.underlineThickness === 'number')
-        this.underlineThickness = options.underlineThickness
-    if (typeof options.underlinePosition === 'number')
-        this.underlinePosition = options.underlinePosition
-    if (typeof options.text === 'string')
-        this.text = options.text
-    if (typeof options.wrapMode === 'string')
-        this.wordwrap.mode = options.wrapMode
-    if (typeof options.wrapWidth === 'number')
-        this.layout(options.wrapWidth)
+    Base.call(this, options)
 
     this.data = {
         glyphs: [],
@@ -29,9 +14,7 @@ function FontpathRenderer(options) {
     }
 }
 
-FontpathRenderer.prototype = Object.create(Base.prototype)
-FontpathRenderer.constructor = FontpathRenderer
-FontpathRenderer.Align = Base.Align
+inherits(FontpathRenderer, Base)
 
 FontpathRenderer.prototype.renderGlyph = function(i, glyph, scale, x, y) {
     this.data.glyphs.push(new Glyph(i, glyph, 
