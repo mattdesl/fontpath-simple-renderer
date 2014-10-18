@@ -117,8 +117,7 @@ Some underline parameters. If position or thickness is undefined, they will be c
 
 ### `renderer.align` (string)
 
-A string which indicates the align mode; left, right, or center. Can also reference `Renderer.Align.LEFT`, `Renderer.Align.CENTER`, and `Renderer.Align.RIGHT`.
-
+A string which indicates the align mode; `"left"`, `"right"`, or `"center"`. 
 ### `renderer.wordwrap` 
 
 An instance of [fontpath-wordwrap](https://github.com/mattdesl/fontpath-wordwrap) which controls how layout is done.
