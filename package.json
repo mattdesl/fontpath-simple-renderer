@@ -1,6 +1,6 @@
 {
   "name": "fontpath-simple-renderer",
-  "version": "3.0.2",
+  "version": "3.0.3",
   "description": "a simplified wrapper for fontpath-renderer",
   "main": "index.js",
   "license": "MIT",
