@@ -49,6 +49,8 @@ Possible options:
 - `underline` boolean, whether to underline, default false
 - `underlinePosition` the position of underline, leave undefined to compute automatically
 - `underlineThickness` the underline thickness, leave undefined to compute automatically
+- `lineHeight` the line height in pixels, default to an automatic value
+- `letterSpacing` the letter spacing in pixels, defaults to zero
 - `wrapMode` same as setting `renderer.wordwrap.mode`, can be `normal`, `pre`, or `nowrap`
 - `wrapWidth` an initial number in pixels which is passed to `layout()` after the other options have been set. Otherwise, defaults to no layout (a single line, no breaks)
 
@@ -118,9 +120,13 @@ Some underline parameters. If position or thickness is undefined, they will be c
 ### `renderer.align` (string)
 
 A string which indicates the align mode; `"left"`, `"right"`, or `"center"`. 
+
 ### `renderer.wordwrap` 
 
 An instance of [fontpath-wordwrap](https://github.com/mattdesl/fontpath-wordwrap) which controls how layout is done.
+
+### `renderer.lineHeight` (px)
+### `renderer.letterSpacing` (px)
 
 # Note on `fontpath-renderer`
 
