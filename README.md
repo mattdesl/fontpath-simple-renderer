@@ -45,7 +45,7 @@ Possible options:
 - `font` the Font object
 - `fontSize` the font size in pixels, defaults to what is defined in `font`
 - `text` the string of text we will be rendering
-- `align` a string 'left', 'center', 'right' (also stored in `Renderer.Align` constants), default left
+- `align` a string 'left', 'center', 'right', default left
 - `underline` boolean, whether to underline, default false
 - `underlinePosition` the position of underline, leave undefined to compute automatically
 - `underlineThickness` the underline thickness, leave undefined to compute automatically
