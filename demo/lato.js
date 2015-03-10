@@ -9,15 +9,6 @@ const createLayout = require('../')
 let context = require('2d-context')()
 let canvas = context.canvas
 
-//handle canvas resizing
-let fit = require('canvas-fit')(canvas, window, window.devicePixelRatio)
-let update = () => {
-  fit()
-  render()
-}
-window.addEventListener('resize', update, false)
-
-//glyph texture atlas
 let atlas = null
 let copy = 'the quick\nbrown\n\nfox jumps over the\nlazy dog'
 let glyphs, metrics
@@ -26,7 +17,16 @@ let glyphs, metrics
 require('domready')(() => {
   document.body.appendChild(canvas)
   document.body.style.background = '#1d1d1d'
-
+      
+  //fit canvas to window on resize
+  //with retina scaling
+  let fit = require('canvas-fit')(canvas, window, window.devicePixelRatio)
+  let update = () => {
+    fit()
+    render()
+  }
+  window.addEventListener('resize', update, false)
+  
   //start rendering when atlas image is loaded
   loadImage(datauri, (err, image) => {
     if (err) 
@@ -58,7 +58,7 @@ function start() {
   glyphs = result.glyphs
 
   //upadte canvas size then render
-  update()
+  render()
 }
 
 function render() {
