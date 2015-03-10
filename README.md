@@ -132,6 +132,17 @@ An instance of [fontpath-wordwrap](https://github.com/mattdesl/fontpath-wordwrap
 
 This is a simplified wrapper for [fontpath-renderer](https://github.com/mattdesl/fontpath-renderer/) that doens't involve subclassing anything. This has a slight overhead of GC thrashing and doesn't allow you to render glyphs on demand (as they are being laid out) but the difference is small for most applications.
 
+## Running the Demo
+
+```sh
+git clone https://github.com/mattdesl/fontpath-simple-renderer.git
+cd fontpath-simple-renderer
+npm install
+npm start
+```
+
+Then open `localhost:9966` in your browser. 
+
 ## License
 
 MIT, see [LICENSE.md](http://github.com/mattdesl/fontpath-simple-renderer/blob/master/LICENSE.md) for details.

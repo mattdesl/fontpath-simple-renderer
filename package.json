@@ -10,10 +10,15 @@
     "inherits": "^2.0.1"
   },
   "devDependencies": {
-    "tape": "~2.13.2"
+    "babelify": "^5.0.4",
+    "fontpath-bmfont": "^1.0.0",
+    "garnish": "^2.1.0",
+    "tape": "~2.13.2",
+    "wtch": "^3.1.2",
+    "wzrd": "^1.2.1"
   },
   "scripts": {
-    "test": "tape test.js"
+    "start": "wzrd demo/lato.js -- -d -t babelify | wtch | garnish -v"
   },
   "testling": {
     "files": "test.js",
